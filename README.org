@@ -1,0 +1,15 @@
+#+TITLE: Backend server for E-Learning
+#+AUTHOR: Crusaders Chain
+
+* Circles
+Each circle (a.k.a layer) is organized in a separate create.
+Currently there are these circles:
+
+- `entity`
+- `domain`
+- `application`
+- `adapter`
+- `infrastructure`
+
+Depending on your system the amount and the name of circles could
+be different but the main *dependency rule* must be ensured:

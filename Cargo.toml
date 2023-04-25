@@ -1,0 +1,25 @@
+[package]
+name = "rust-server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace]
+members = [
+  "adapter",
+  "application",
+  "domain",
+  "entity",
+  "infrastructure"
+]
+
+
+[dependencies]
+infrastructure = "0.1.0"
+
+[patch.crates-io]
+adapter = { path = "adapter"}
+application = { path = "application"}
+domain = { path = "domain"}
+entity = { path = "entity"}
+infrastructure = { path = "infrastructure"}
